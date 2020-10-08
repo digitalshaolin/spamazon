@@ -1,0 +1,23 @@
+// COLORS
+
+$color-primary-darkblue: rgb(19, 25, 33);
+$color-input-border: rgb(254, 189, 105);
+$color-gray-text: rgb(204, 204, 204);
+$color-gray-background: rgb(234, 237, 237);
+
+// BORDERS
+
+$border-transparent: 1px solid transparent;
+
+@mixin boldWhiteFont {
+    font-size: 1.4rem;
+    font-family: Amazon Ember Bold;
+    color: white;
+}
+
+
+
+
+
+
+

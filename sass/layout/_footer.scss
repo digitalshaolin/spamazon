@@ -1,0 +1,391 @@
+.footer {
+  
+    &__top-section {
+
+
+    }
+
+    &__upscroll-link {
+
+        text-align: center;
+        background-color: rgb(55, 71, 90);
+        padding: 15px 0;
+        min-width: 1240px;
+
+        &:hover {
+            background-color: rgb(72, 87, 105);
+            
+        }
+
+        .upscroll-link {
+
+            color: white;
+            font-size: 13px;
+            line-height: 19px;
+            
+        }
+
+
+    }
+
+   
+    &__main-links {
+
+        background-color: rgb(35, 47, 62);
+        border-bottom: 1px solid rgb(58, 69, 83);
+        min-width: 1240px;
+
+    }
+
+    
+
+    &__logo-section {
+
+        &-container {
+            background-color: rgb(35, 47, 62);
+            padding: 25px 0 45px 0;
+            min-width: 1240px;
+        }
+
+        // background-color: green;
+        display: flex;
+        align-items: center;
+        width: 470px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        &-logo {
+
+            margin-top: 10px;
+
+            img {
+                width: 120px;
+            }
+
+        }
+
+        &-language {
+            
+            border: 1px solid rgb(132, 134, 136);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 34px;
+            width: 116px;
+            margin-left: 77px;
+
+            &:hover {
+                cursor: pointer;
+            }
+            
+
+            .globe {
+
+                position: relative;
+                height: 15px;
+                width: 15px;
+                overflow: hidden;
+                margin-left: 7px;
+
+                img {
+
+                    position: absolute;
+                    top: -23px;
+                    left: -76px;
+
+                }
+
+
+            }
+
+            span {
+
+                font-size: 13px;
+                color: rgb(221, 221, 221);
+                margin-left: -12px;
+                
+
+            }
+
+            .arrows {
+
+                position: relative;
+                width: 15px;
+                height: 12px;
+                overflow: hidden;
+                margin-right: 5px;
+
+                img {
+                    position: absolute;
+                    top: -79px;
+                    left: -79px;
+                }
+
+            }
+            
+
+        }
+
+        &-country {
+
+            border: 1px solid rgb(132, 134, 136);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 34px;
+            width: 140px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            span {
+
+                font-size: 13px;
+                color: rgb(221, 221, 221);
+                margin-right: 21px;
+
+            }
+
+            .flag {
+
+                position: relative;
+                width: 18px;
+                height: 12px;
+                overflow: hidden;
+                margin-left: 8px;
+
+                img {
+
+                    position: absolute;
+                    top: -133px;
+                    left: -1px;
+
+                }
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+    &__bottom-section {
+
+        background-color: #131A22;
+        padding: 13px 0;   
+        min-width: 1240px;    
+
+
+    }
+
+    &__bulk-links {
+
+
+        &__row {
+
+            display: flex;
+            justify-content: space-between;
+            width: 982px;
+            margin: 0 auto;
+            padding-top: 15px;
+
+
+            .col1 {   
+                
+                width: 78px;                
+    
+            }
+    
+            .col2 {
+
+                width: 87px;
+    
+            }
+    
+            .col3 {
+
+                width: 75px;
+    
+            }
+    
+            .col4 {
+
+                width: 142px;
+    
+            }
+    
+            .col5 {
+
+                width: 75px;
+    
+            }
+    
+            .col6 {
+
+                width: 103px;
+    
+            }
+    
+            .col7 {
+
+                width: 87px;
+    
+            }
+
+
+            
+        }
+
+        &__row-links {
+
+            line-height: 11px;
+
+
+            a {
+               
+                &:hover .bottom-links__white {
+                    text-decoration: underline;
+                }
+
+                &:hover .bottom-links__gray {
+                    text-decoration: underline;
+                }
+
+            }
+
+            .bottom-links__white {
+
+
+                line-height: 12px;
+                font-size: 11px;
+                color: rgb(221, 221, 221);
+
+            }
+
+            .bottom-links__gray {
+                
+                color: rgb(153, 153, 153);
+
+
+            }
+
+
+        }
+
+
+    }
+
+    &__copyright {
+
+        width: 575px;
+        margin: 0 auto;
+        padding: 50px 0 20px 0;
+
+        a {
+
+            margin-left: 9px;
+            font-size: 12px;
+            color: rgb(221, 221, 221);
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        .gray-text {
+
+            font-size: 12px;
+            color: rgb(153, 153, 153)
+
+        }
+
+        
+    }
+
+
+}
+
+
+ 
+
+.main-links__container {
+
+    width: 982px;
+    display: flex;
+    background-color: rgb(35, 47, 62);
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    
+
+    .main-links__column {
+
+      
+       
+    }
+
+    .one {
+
+        width: 120px;        
+
+    }
+
+    .two {
+        width: 156px;
+    }
+
+    .three {
+        width: 205px;
+    }
+
+    .four {
+        width: 145px;
+    }
+    
+
+}
+
+.main-links__column {
+
+    &-header {
+
+        display: block;
+        font-size: 16px;
+        color: white;
+        font-family: Amazon Ember Bold;
+        margin-bottom: 10px;
+
+    }
+
+
+    &-ul {
+
+
+    }
+
+    &-links {
+
+        margin-bottom: 8px;
+
+        a {
+            font-size: 13px;
+            color: rgb(221, 221, 221);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+
+
+}

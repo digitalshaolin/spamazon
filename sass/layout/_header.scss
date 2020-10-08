@@ -1,0 +1,221 @@
+.navbar {
+    &__upper {
+       
+        background-color: $color-primary-darkblue;
+        display: flex;        
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3px 0;
+        overflow: visible;
+        min-width: 1240px;
+        
+      
+      
+
+        .nav {    
+            &__main-menu {    
+                
+                border: 1px solid grey;
+                border-radius: 3px;
+                height: 4rem;
+                width: 3.8rem;
+                margin: 0 .5rem;
+                text-align: center;
+                margin-left: .7rem;
+                flex-shrink: 0;
+                
+                a {
+                    background-image: url(/Images/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png); 
+                    background-position: -136px -255px;
+                    width: 2rem;
+                    height: 2rem;                     
+                    display: inline-block;
+                    margin-top: 1rem;
+                    
+                }
+
+
+               &:hover {
+                    border-color: white;                
+                }
+            }
+
+            &__logo {
+                border: $border-transparent;
+                padding: .9rem 4rem .5rem .4rem;
+                margin-right: .6rem;
+
+                
+                
+                &:hover {
+                    border-color: white; 
+                    cursor: pointer;
+                }
+            }
+
+            &__search {
+                background-color: lightgray;
+                flex-grow: 1;
+                border-radius: 4px;   
+                margin-right: 2rem;
+                flex-shrink: 0;
+
+                input {
+                    width: 100%;
+                    font-size: 20px;
+                }
+
+                #select {
+                    width: 45px;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                    
+
+                    &:focus {                        
+                        outline: none;
+                    }
+                }   
+                               
+
+                #select-hidden {
+                    font-size: 12px;
+                    font-family: Amazon Ember;
+                    visibility: hidden;
+                    position: absolute;
+                }
+            }
+
+            &__account-menu {
+                border: $border-transparent;     
+                padding: .8rem 2rem .8rem 1rem;
+                border-radius: 2px;    
+                flex-shrink: 0;
+                position: relative;
+                
+                &:hover {
+                    border-color: white; 
+                }
+                
+                &_line1 {
+                    font-size: 1.2rem;
+                    color: $color-gray-text;
+                    display: block;                    
+                }
+                
+                &_line2 {
+
+                    @include boldWhiteFont;    
+
+                    position: relative;
+
+
+                    svg {
+                       position: absolute;
+                       fill: $color-gray-text;
+                       top: 0;                       
+                   }
+                }
+            }
+            
+            &__returns {
+                border: $border-transparent;
+                padding: .8rem .8rem;
+                border-radius: 2px;
+                flex-shrink: 0;
+                
+
+                &-line1 {
+                    font-size: 1.2rem;
+                    color: $color-gray-text;
+                    display: block;                    
+                }
+
+                &-line2 {
+
+                    @include boldWhiteFont;
+
+                }
+
+                &:hover {
+                    border-color: white; 
+                }
+            }
+
+            &__prime {
+                border: $border-transparent;                
+                padding: 2.3rem 2rem .8rem .8rem;
+                border-radius: 2px;
+                flex-shrink: 0;
+                position: relative;
+
+                &-line2 {
+
+                    @include boldWhiteFont;    
+
+                    position: relative;
+
+
+                    svg {
+                       position: absolute;
+                       fill: $color-gray-text;
+                       top: 0;                      
+                    }
+                }
+
+                &:hover {
+                    border-color: white; 
+                }
+            }
+
+            &__cart {
+                border: $border-transparent;                
+                position: relative;               
+                margin-right: .3rem;
+                padding-left: 1rem;
+                height: 5.1rem;
+                width: 10rem;
+                border-radius: 2px;
+                flex-shrink: 0;
+                
+                
+
+                &:hover {
+                    border-color: white; 
+                }
+
+                &-img {
+                    
+                    position: absolute;
+                    display: inline-block;
+                    overflow: hidden;                    
+                    width: 39px;
+                    height: 27px;
+                    top: 12px;
+
+                    img {
+                        position: absolute;
+                        top: -340px;
+                        left: -10px;
+                    }
+                }
+
+                &-number {
+                    position: absolute;
+                    top: 4px;
+                    left: 27px;
+                    font-size: 16px;
+                    color: rgb(240, 136, 4);
+                    font-family: Amazon Ember Bold;
+                }
+
+                &-name {
+                    position: absolute;
+                    @include boldWhiteFont;
+                    top: 23px;
+                    left: 47px;
+                }
+
+            }
+        }
+    }
+}

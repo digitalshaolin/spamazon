@@ -1,0 +1,228 @@
+.side-menu {  
+      
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    transform: translateX(-365px);
+    top: 50px;  
+
+
+    &__header {
+
+        display: flex;
+        align-items: center;        
+        z-index: 1000;
+        position: absolute;
+        height: 50px;
+        width: 365px;
+        background-color: rgb(35, 47, 62);
+        transform: translateX(-365px);
+
+        span {
+            font-size: 1.9rem;
+            font-family: Amazon Ember;
+            color: white;
+            padding-left: 14px;
+        }
+
+        .img-container {
+            
+            position: relative;
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            margin-left: 35px;
+
+
+            img {
+                position: absolute;
+                top: -340px;
+                left: -137px;
+            }
+        }
+       
+    }
+
+    &__content-main {        
+
+
+        .main-menu-list {
+
+            width: 365px;
+            background-color: white;
+            height: calc(100vh - 50px);
+            overflow: scroll;
+            position: relative;
+            display: inline-block;
+            padding-top: 7px;
+            padding-bottom: 30px;
+            
+            a {
+                justify-content: space-between;
+                display: flex;
+                width: 100%;                
+                line-height: 16px;
+                align-items: center;
+            }
+            
+            a:hover,
+            a:hover #icon-right {
+                fill: black;
+                background-color: rgb(234, 237, 237);
+            }
+            
+            #icon-right {
+                width: 20px;
+                height: 20px;
+                fill: rgb(151, 151, 151);   
+                margin: -2px 0;                         
+            }
+
+            .flag {
+                overflow: hidden;
+                width: 18px;
+                height: 13px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: -108px;
+                    left: -54px;
+                }
+            }
+
+            .flag-text {
+                margin-right: 178px;
+            }
+
+            .globe-gray {
+                overflow: hidden;
+                width: 15px;
+                height: 15px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: -52px;
+                    left: -76px;
+                }
+            }
+
+            .globe-text {
+                margin-right: 219px;
+            }
+        }         
+
+    }
+   
+}
+
+.sub-menu-sections {
+
+    position: absolute;
+    overflow: hidden;
+    width: 365px;
+    height: 100vh;
+    visibility: hidden;
+
+    .sub-menu-section {
+                       
+        position: absolute;
+        width: 365px;
+        height: calc(100vh - 50px);
+        top: 50px;
+        left: 365px;
+        background-color: white;
+        z-index: 1000;
+        overflow: scroll;
+
+        a {                
+            display: block;            
+            line-height: 16px;
+        }
+
+        a:hover {
+            background-color: rgb(234, 237, 237);
+        }
+    }
+}
+
+
+.overlay {
+
+    position: absolute;
+    width: 100%;    
+    height: 100%;  
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;  
+    
+    .menu-close {
+
+       position: absolute;
+       width: 20px;
+       height: 20px;
+       overflow: hidden;       
+       left: 380px;
+       top: 20px;
+       cursor: pointer;
+
+       img {
+           position: absolute;
+           top: -288px;
+           left: -190px;
+       }
+    }
+}
+
+.sub-menu {
+
+    &-section {
+        padding-top: 7px;
+        padding-bottom: 30px;
+    }
+
+    &__left-nav {      
+        display: flex; 
+        align-items: center;         
+        height: 45px;
+
+        &:hover {
+            background-color: rgb(234, 237, 237);
+            cursor: pointer;
+
+            svg {
+                stroke: rgb(17, 17, 17);
+            }
+        }
+    }   
+
+    &__nav-text {
+        height: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: rgb(17, 17, 17);
+        font-family: Amazon Ember Bold;
+        padding-left: 35px;
+
+        svg {
+            display: inline-block;
+            margin-right: 10px;
+            stroke: gray;
+        }
+
+        span {
+            display: inline-block;
+        }
+    }
+
+}
+
+.main-menu-item {
+    padding: 13px 20px 15px 36px;
+}
+
+

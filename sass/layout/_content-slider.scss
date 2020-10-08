@@ -1,0 +1,226 @@
+.slide-section {
+
+    position: relative;
+    max-width: 1460px;
+    min-width: 1200px;
+    margin: 0 auto 20px;    
+    border-bottom: 6px solid white;
+    background-color: white;
+    
+        
+    &__header {
+
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 0 10px 20px;
+
+        // .slide__header {}
+        
+
+        .slide__header-link {
+
+           padding: 0 0 2px 10px;
+
+
+        }
+
+    }
+
+    &__slide-container {
+
+        max-width: 1460px;  
+        margin: 0 20px 0 20px;        
+        padding-bottom: 20px;
+        
+
+        &:hover {
+
+            cursor: pointer;
+
+        }
+
+    }
+
+    
+    // slide-rail nested within slide-container div element
+
+    &__slide-rail {
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+
+        .section-slides {
+
+            &:not(:last-child) {
+                margin-right: 10px;
+
+            }
+
+
+        }
+        
+
+    }
+
+
+    // slide-controls nested within slide-container div element
+
+    &__slide-controls-left {
+
+        position: absolute;        
+        width: 50px;
+        height: 107px;      
+        left: 20px;
+        overflow: hidden;           
+
+        
+    }
+
+    &__slide-controls-right {
+
+        position: absolute;        
+        width: 50px;
+        height: 107px;      
+        right: 20px;
+        overflow: hidden;
+        
+
+    }
+    
+    .slide-buttons {
+        height: 100px;
+        width: 45px;
+        background-color: white;            
+        border: none;   
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover svg {
+            fill: rgb(54, 54, 54);
+        }
+
+        svg {
+            height: 40px;
+            width: 40px;
+            fill: rgb(92, 92, 92);
+        }
+    }
+
+    .slide-left {
+
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        box-shadow: rgb(136, 136, 136) 0px 1px 3px 0px; 
+        transform: translateY(3px);    
+        opacity: .5; 
+        
+
+        svg {                
+            transform: rotate(180deg);
+        }
+    }
+
+    .slide-right {
+
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        box-shadow: rgb(136, 136, 136) 0px 1px 3px 0px;
+        transform: translate(5px, 3px);
+        opacity: 1;
+       
+    }
+
+    .slide-control-divs {
+        opacity: 0;
+    }
+
+    .slide-item-spacer {
+        margin: 0 25px;
+    }
+
+    .slide-item-spacer__small {
+        margin: 0 20px;
+    }
+
+    .slide-item-spacer__small-right {
+        margin-right: 20px;
+    }
+
+}
+
+.last-section__container {
+
+    position: relative;
+    width: 1460px;
+    max-width: calc(100vw - 60px);
+    min-width: 1200px;
+      
+    margin: 0 auto 20px;
+
+    
+
+    .slide-section__last {        
+        
+        
+        margin: 0;    
+        border-bottom: 6px solid white;
+        background-color: white;
+        display: inline-block;
+        max-width: calc(100% - 320px);
+        min-width: 500px;
+        
+
+    }
+
+    .end-page-ad {
+
+        
+        margin-left: 20px;
+        margin-top: 10px;
+        float: right;
+
+        
+        
+        img {
+
+            
+            &:hover {
+                cursor: pointer;
+            }
+            
+        }
+
+    }
+}
+
+
+.os-scrollbar-handle {
+    opacity: 0;
+}
+
+.os-scrollbar-handle {
+   background-color: #9c9c9c !important;
+
+   &:hover {
+       background-color: rgb(107, 107, 107) !important;
+   }
+}
+
+.os-scrollbar-handle.active {
+    background-color: rgb(107, 107, 107) !important;
+}
+
+#slide-section-1 .os-scrollbar-handle {
+    opacity: .8;
+}
+
+
+

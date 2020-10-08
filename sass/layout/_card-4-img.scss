@@ -1,0 +1,35 @@
+.card {
+
+
+    &__row {
+
+        // width: 80%;
+        position: relative;
+        display:flex;
+        height: 50%;        
+
+        &-image-container {
+            height: 75%;            
+        }
+
+        &-text-container {
+
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+
+        &-img {
+            
+            object-fit: cover;
+            width: 90%;
+            height: 100%;
+
+        }
+
+
+
+    }
+
+
+}

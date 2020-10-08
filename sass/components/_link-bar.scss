@@ -1,0 +1,128 @@
+.link-bar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(35, 47, 62);
+    overflow: hidden;
+    min-width: 1240px;
+
+
+    &__address {
+        position: relative;
+        flex-shrink: 0;
+        border: $border-transparent; 
+        border-radius: 2px;
+        padding: 7px 7px 2px 0px;
+        margin: 0 2rem 0 1rem;
+
+        &:hover {
+            border-color: white;
+            cursor: pointer;
+        }
+
+        .line-1 {
+            color: white;
+            font-size: 12px; 
+            position: absolute;   
+            top: 2px;
+            left: 26px;        
+        }
+
+        .line-2 {
+            @include boldWhiteFont;
+        }
+
+        .geo-icon {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            width: 23px;
+            height: 23px;
+
+            img {
+                position: absolute;
+                top: -305px;
+                left: -67px;
+            }
+        }
+    }
+
+    &__middle-links {
+        flex-shrink: 0;        
+
+        & .links {
+
+           display: inline-block;
+           color: white; 
+           font-size: 14px;  
+           padding: 7px 8px;   
+           border: $border-transparent; 
+           border-radius: 2px; 
+           line-height: 13px;
+
+           
+           
+           &:hover {
+               border-color: white;
+           }
+        }
+        
+    }
+
+    &__end-link {
+        flex-shrink: 0;
+        border: $border-transparent;
+        border-radius: 2px;
+        padding: 5px 5px;
+        margin-right: 1rem;
+
+        &:hover {
+            border-color: white;
+        }
+
+        a:link,
+        a:visited {
+        @include boldWhiteFont;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .responsive-1 {
+        display: none !important;        
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .responsive-2 {
+        display: none !important;        
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .responsive-3 {
+        display: none !important;        
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    .responsive-4 {
+        display: none !important;        
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .responsive-5 {
+        display: none !important;        
+    }
+}
+
+@media screen and (max-width: 1770px) {
+    .responsive-6 {
+        display: none !important;        
+    }
+}
+

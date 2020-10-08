@@ -1,0 +1,238 @@
+.account-modal {
+
+    &__container {
+
+    position: absolute;    
+    background-color: white;
+    top: 48px;
+    left: -248px;
+    z-index: 100;
+    padding: 15px 15px 10px 25px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 3px;
+
+    visibility: hidden;
+    transition: visibility;    
+
+    }
+
+    &__header {
+
+        
+        padding: 0 130px 0 125px;
+        border-bottom: 1px solid rgb(240, 240, 240);
+        margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+
+        .arrow-up {
+
+            width: 0;
+            height: 0;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-bottom: 9px solid white;
+            position: absolute;
+            top: -24px;
+            left: 332px;
+            
+        }
+
+        span {
+
+            display: block;
+            font-size: 11px;
+            color: rgb(51, 51, 51);
+            margin: 7px 0 9px 0;
+
+        }
+
+        a {
+            font-size: 11px;
+            color: #0085dd;
+
+            &:hover {
+
+                color: rgb(230, 130, 0);
+                text-decoration: underline;
+
+            }
+        }
+        
+
+        button {
+            
+            width:197px; 
+            margin-top: 0;
+            height: 31px;
+
+            &:active {
+                box-shadow: none;
+                border: none;
+            }
+            
+        }
+
+    }
+
+    &__body {
+
+        display: flex;
+        justify-content: space-between;
+        line-height: 16px;
+
+        a {
+            font-size: 13px;
+            color: rgb(68, 68, 68);
+            padding-bottom: 7px;
+
+            &:hover {
+
+                color: rgb(230, 130, 0);
+                text-decoration: underline;
+
+            }
+        }
+
+        span {
+            font-size: 16px;
+            font-family: Amazon Ember Bold;
+            padding-bottom: 10px;
+        }
+
+    }
+
+    &__body-left {
+
+        display: flex;
+        flex-direction: column;
+        
+
+
+    }
+
+    &__body-right {
+
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid rgb(240, 240, 240);
+        padding-left: 20px;
+        padding-right: 17px;
+
+
+    }
+
+}
+
+.nav-overlay {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 100;
+    top: 99px;
+    left: 0;
+
+    visibility: hidden;
+    transition: visibility;    
+
+}
+
+.prime-modal {
+
+    &__container {
+
+        position: absolute;
+        background-color: white;
+        top: 48px;
+        left: -200px;
+        z-index: 100;
+        padding: 15px 15px 15px 15px;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 3px;
+
+        visibility: hidden;
+        transition: visibility;  
+
+        
+    }
+
+    &__body {
+
+        background-color: #00a8e1;
+        text-align: center;
+        position: relative;
+
+         .arrow-up {
+
+            width: 0;
+            height: 0;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-bottom: 9px solid white;
+            position: absolute;
+            top: -24px;
+            left: 256px;
+            
+        }
+
+        a {
+    
+            display: block;
+            color: rgb(15, 17, 17);
+            padding: 9px 0;
+            background-color: rgb(255, 153, 0);
+            width: 85px;
+            margin: -5px auto 0;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: Amazon Ember Bold;
+
+        }
+
+    }
+
+    &__image {
+
+        padding: 20px 0 18px 0;
+
+        img {
+            width: 103px;
+        }
+
+    }
+
+    &__header-text {
+
+        display: block;
+        font-size: 24px;
+        font-family: Amazon Ember Bold;
+        color: rgb(255, 244, 224);
+        line-height: 28px;
+        margin-bottom: -2px;
+
+    }
+
+    &__lower-text {
+
+        display: block;
+        margin-bottom: 5px;
+        color: rgb(255, 244, 224);
+        font-size: 14px;  
+        padding: 0 30px;      
+
+
+    }
+
+    &__bottom-image {
+
+        margin-top: 5px;
+        padding: 0 30px;
+
+        img {
+            width: 250px;
+        }
+
+    }
+}

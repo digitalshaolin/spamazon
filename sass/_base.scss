@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Officina";
+    src: url('/amazon-font/Itc-Officina-Sans-Font/OfficinaSansStd-Bold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {    
+    font-family: Amazon Ember, Arial, sans-serif;   
+    background-color: rgb(234, 237, 237);
+}
+
+*:link,
+*:visited {
+     text-decoration: none;
+}
+
+main {
+    margin: 0 20px;
+}
+
+.hover-pointer {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.mid-page-ad {
+
+    margin-bottom: 20px;
+    
+    &__star-wars {        
+
+        display: block;
+        margin: 0 auto;
+        height: 250px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+.slide-img-270 {
+    width: 270px;
+}
+
